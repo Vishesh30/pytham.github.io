@@ -6,12 +6,12 @@ function onCanvas(){
 		var offset = $("#canvas").offset();
 		
 		context.beginPath();
-		context.moveTo(evt.pageX , evt.pageY - offset.top );
+		context.moveTo(evt.pageX , evt.pageY  );
 		
 		$(document).mousemove(function(evt){
 			var offset = $("#canvas").offset();
 			
-			context.lineTo(evt.pageX - offset.left , evt.pageY - offset.top );
+			context.lineTo(evt.pageX , evt.pageY );
 			context.lineWidth = 1;
 			context.strokeStyle ='black';
 			context.stroke();
