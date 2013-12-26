@@ -6,7 +6,7 @@ function onCanvas(){
 		var offset = $("#canvas").offset();
 		
 		context.beginPath();
-		context.moveTo(evt.pageX - offset.left , evt.pageY - offset.top );
+		context.moveTo(evt.pageX , evt.pageY - offset.top );
 		
 		$(document).mousemove(function(evt){
 			var offset = $("#canvas").offset();
